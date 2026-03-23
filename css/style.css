@@ -1,6 +1,5 @@
 @import url(dark-mode-toggle.css);
 @import url(elements.css);
-@import url("https://cdn.iconplanet.app/uicons/awesome-solid/css/ip-awesome-solid.css");
 
 /* Colors ---------------------------------- */
 :root {
@@ -26,7 +25,7 @@
     --gray: #646464;
     --darkgray: #e6e7f7;
     --dark: #f7f8ff;
-    --primary: #6e75fa;
+    --primary: #7b81f8;
     --on-primary: #131313;
     --secondary: #fad623;
     --error: #de3b3b;
@@ -76,6 +75,12 @@ nav {
     align-items: center;
 }
 
+@media (max-width: 1023px) {
+    nav {
+        min-width: 100%;
+    }
+}
+
 .avatar {
     display: flex;
     align-items: center;
@@ -83,10 +88,13 @@ nav {
 
 .header-logo {
     width: 40px;
+    background: #dedfff;
+    border-radius: 6px;
+    padding: 8px;
 }
 
 .header-text {
-    color: #26c6da;
+    color: var(--primary);
     font-size: 1.5rem;
     margin-right: 8px;
     

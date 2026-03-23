@@ -16,10 +16,19 @@
     display: none;
 }
 
-
-
 #toggle-icon {
     display: flex;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#toggle-icon:hover {
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+
 }
 
 .toggle-svg {
@@ -30,47 +39,4 @@
 
 .toggle-svg:hover {
     filter: brightness(150%);
-    cursor: pointer;
-    scale: 105%;
-    transition: 0.4s;
 }
-
-
-
-/* .slider {
-    background: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s;
-}
-
-.slider::before {
-    background: #fff;
-    bottom: 4px;
-    content: "";
-    height: 20px;
-    left: 4px;
-    position: absolute;
-    transition: 0.4s;
-    width: 20px;
-}
-
-input:checked+.slider {
-    background: var(--lightgray);
-}
-
-input:checked+.slider::before {
-    transform: translateX(20px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round::before {
-    border-radius: 50%;
-} */
