@@ -87,7 +87,8 @@ nav {
 }
 
 .header-logo {
-    width: 40px;
+    width: 36px;
+    height: 36px;
     background: #dedfff;
     border-radius: 6px;
     padding: 8px;
