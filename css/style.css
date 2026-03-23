@@ -1,0 +1,107 @@
+@import url(dark-mode-toggle.css);
+@import url(elements.css);
+@import url("https://cdn.iconplanet.app/uicons/awesome-solid/css/ip-awesome-solid.css");
+
+/* Colors ---------------------------------- */
+:root {
+    --light: #f9fafb;
+    --lightgray: #dfdfdf;
+    --gray: #cacaca;
+    --darkgray: #252525;
+    --dark: #1e1e1e;
+    --primary: #656cf1;
+    --on-primary: #111111;
+    --secondary: #fbd307;
+    --error: #de3b3b;
+    --background: #f3f3f3;
+    --on-background: #ffffff;
+    --shadow: #f3f3f399;
+    --body-text: #141414;
+    --heading-text: #0a0a0a;
+}
+
+[data-theme="dark"] {
+    --light: #111827;
+    --lightgray: #424d5f;
+    --gray: #646464;
+    --darkgray: #e6e7f7;
+    --dark: #f7f8ff;
+    --primary: #6e75fa;
+    --on-primary: #131313;
+    --secondary: #fad623;
+    --error: #de3b3b;
+    --background: #141820;
+    --on-background: #212836;
+    --shadow: #1418204a;
+    --body-text: #dee5f3;
+    --heading-text: #ffffff;
+}
+
+
+body {
+    background: var(--background);
+}
+
+
+h1, h2, h3 {
+    color: var(--heading-text);
+}
+
+li, p, span, input, label, select {
+    color: var(--body-text);
+}
+
+* {
+    font-family: Vazirmatn;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header -------------------------------------------- */
+header {
+    z-index: 10;
+    position: relative;
+    padding: 20px;
+    width: 100vw;
+    background-color: var(--on-background);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1024px;
+    justify-self: center;
+    /* background: #b58a39; */
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 40px;
+}
+
+.header-text {
+    color: #26c6da;
+    font-size: 1.5rem;
+    margin-right: 8px;
+    
+}
+
+
+
+/* Content -------------------------------- */
+main {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 2rem;
+  }
