@@ -73,7 +73,7 @@ nav {
     justify-content: space-between;
     min-width: 1024px;
     justify-self: center;
-    /* background: #b58a39; */
+    align-items: center;
 }
 
 .avatar {

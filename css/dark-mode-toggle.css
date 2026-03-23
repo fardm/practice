@@ -7,18 +7,37 @@
 }
 
 .theme-switch {
+    z-index: 100;
     display: inline-block;
-    height: 28px;
     position: relative;
-    width: 48px;
-    margin-left: 8px;
 }
 
 .theme-switch input {
     display: none;
 }
 
-.slider {
+
+
+#toggle-icon {
+    display: flex;
+}
+
+.toggle-svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--darkgray);
+}
+
+.toggle-svg:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+    scale: 105%;
+    transition: 0.4s;
+}
+
+
+
+/* .slider {
     background: #ccc;
     bottom: 0;
     cursor: pointer;
@@ -54,4 +73,4 @@ input:checked+.slider::before {
 
 .slider.round::before {
     border-radius: 50%;
-}
+} */
