@@ -1,6 +1,7 @@
+@import url(/assets/css/global.css);
+
 
 /* todo box __________________________________________ */
-
 .container {
     max-width: 500px;
     margin: 4rem auto 0 auto;
