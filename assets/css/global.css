@@ -51,6 +51,7 @@ li, p, span, input, label, select {
 
 a {
     color: var(--primary);
+    text-decoration: none;
 }
 
 
@@ -60,12 +61,25 @@ a {
     font-family: Vazirmatn;
 }
 
+
+
 /* Base */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    filter: brightness(120%);
+}
+
+
 
 
 
