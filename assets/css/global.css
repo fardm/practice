@@ -115,12 +115,12 @@ nav {
 
 /* icon */
 
-.header-icons {
+.section-icons {
     display: flex;
     gap: 8px;
 }
 
-.icon {
+.header-icon {
     display: flex;
     padding: 6px;
     border: 1px solid transparent;
@@ -129,13 +129,13 @@ nav {
     transition: 0.4s;
 }
 
-.icon:hover {
+.header-icon:hover {
     border: 1px solid var(--lightgray);
     border-radius: 6px;
 
 }
 
-.icon:active {
+.header-icon:active {
     transform: translate(0, 0.2rem);
 }
 

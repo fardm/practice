@@ -69,7 +69,7 @@
   
   }
   
-  .todo-list li .icon {
+  .todo-list li .remove-task-icon {
     position: absolute;
     left: 15px;
     top: 50%;
@@ -85,7 +85,7 @@
   
   }
   
-  .todo-list li .icon:hover {
+  .todo-list li .remove-task-icon:hover {
     opacity: 1;
   
   }
