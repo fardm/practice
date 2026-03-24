@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت وظایف</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <div class="avatar">
+                <img src="assets/favicon.svg" class="header-logo" alt="logo">
+                <h1 class="header-text">مدیریت وظایف</h1>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" id="toggle-switch">
+                <div id="toggle-icon"></div>
+            </label>
+        </nav>
+    </header>
+
+    <!-- Todo Box -->
+    <section>
+        <div class="container">
+            <h2 class="todo-header">لیست کارها</h2>
+
+            <div class="input-todo">
+                <input id="inputTask" type="text" placeholder="تسک جدید...">
+                <button>+</button>
+            </div>
+
+            <ul class="todo-list">
+            </ul>
+
+            <div class="info-box">
+                <span>شما <span class="pendingTasks"></span> تسک برای انجام دارید.</span>
+                <button>پاک کردن همه</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/light-dark-mode.js"></script>
+
+</html>

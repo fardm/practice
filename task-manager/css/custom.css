@@ -1,0 +1,123 @@
+
+/* todo box __________________________________________ */
+
+.container {
+    max-width: 500px;
+    margin: 4rem auto 0 auto;
+    background: var(--on-background);
+    padding: 25px;
+    border-radius: 5px;
+    border: solid 1px var(--lightgray);
+  }
+  
+  .todo-header {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  
+  .container .input-todo {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .input-todo input {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px var(--lightgray);
+    transition: all 0.3s ease;
+    padding-right: 15px;
+    background: transparent;
+  
+  }
+  
+  .input-todo button {
+    border: none;
+    background: var(--primary);
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  
+  }
+  
+  .input-todo button.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .input-todo button:hover {
+    filter: brightness(115%);
+  }
+  
+  .todo-list li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    background-color: var(--shadow);
+    padding: 10px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+  
+  }
+  
+  .todo-list li .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    fill: var(--error);
+    opacity: 0.4;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  
+  
+  
+  }
+  
+  .todo-list li .icon:hover {
+    opacity: 1;
+  
+  }
+  
+  .container .info-box {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .info-box button {
+    border: none;
+    background: var(--error);
+    border-radius: 3px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  
+  .info-box button.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .info-box button:hover {
+    filter: brightness(115%);
+  }
