@@ -1,4 +1,3 @@
-@import url(dark-mode-toggle.css);
 @import url(elements.css);
 
 /* Colors ---------------------------------- */
@@ -144,6 +143,8 @@ nav {
 
 }
 
+
+
 .toggle-svg {
     width: 24px;
     height: 24px;
@@ -157,6 +158,7 @@ nav {
 
 
 /* Content -------------------------------- */
+
 main {
     max-width: 1024px;
     display: flex;
