@@ -1,4 +1,5 @@
 @import url(elements.css);
+@import url(custom.css);
 
 /* Colors ---------------------------------- */
 :root {
@@ -110,25 +111,14 @@ nav {
 }
 
 
-/* Dark Mode Toggle ------------------------------- */
-.theme-switch-wrapper {
+/* icon */
+
+.header-icons {
     display: flex;
-    align-items: center;
-    z-index: 100;
-    position: relative;
+    gap: 8px;
 }
 
-.theme-switch {
-    z-index: 100;
-    display: inline-block;
-    position: relative;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-#toggle-icon {
+.icon {
     display: flex;
     padding: 6px;
     border: 1px solid transparent;
@@ -137,36 +127,32 @@ nav {
     transition: 0.4s;
 }
 
-#toggle-icon:hover {
+.icon:hover {
     border: 1px solid var(--lightgray);
     border-radius: 6px;
 
 }
 
+.icon:active {
+    transform: translate(0, 0.2rem);
+}
 
 
-.toggle-svg {
+
+.icon-svg {
     width: 24px;
     height: 24px;
     fill: var(--darkgray);
 }
 
-.toggle-svg:hover {
+.icon-svg:hover {
     filter: brightness(150%);
 }
 
+/* Dark Mode Toggle */
 
-
-/* Content -------------------------------- */
-
-main {
-    max-width: 1024px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 2rem;
-  }
+#toggle-switch {
+    display: none;
+}
 
 
