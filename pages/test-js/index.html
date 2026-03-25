@@ -4,24 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه اصلی</title>
+    <title>تست JS</title>
     <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/global.css">
-<style>
-main {
-    max-width: 1024px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    margin: 2rem auto;
-    background-color: var(--on-background);
-    border-radius: 8px;
-    }
-a {
-font-size: 1.3rem;
-}
+    <link rel="stylesheet" href="custom.css">
 
-</style>
 </head>
 
 <body>
@@ -29,7 +15,7 @@ font-size: 1.3rem;
         <nav id="nav">
             <div class="avatar">
                 <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M548.5 214.5l-143.7 104.5l54.89 169.1c5.441 16.76-13.72 30.69-27.96 20.33L288 403.1l-143.7 104.5c-14.24 10.36-33.4-3.578-27.96-20.33l54.89-169.1L27.53 214.5C13.28 204.2 20.6 181.6 38.21 181.6h177.6l54.89-169.1c5.439-16.76 29.13-16.76 34.57 0L360.2 181.6h177.6C555.4 181.6 562.7 204.2 548.5 214.5z"/></svg>
-                <h1 class="header-text">صفحه اصلی</h1>
+                <h1 class="header-text">تست JS</h1>
             </div>
 
             <div class="section-icons">
@@ -43,21 +29,52 @@ font-size: 1.3rem;
             </div>
         </nav>
     </header>
-<main>
-        <div class="link-pages">
-        <ul>
-            <li><a href="template/">تمپلیت</a></li>
-            <li><a href="/pages/task-manager/">مدیریت وظایف</a></li>
-            <li><a href="/pages/quote-generator/">جملات قصار</a></li>
-            <li><a href="/pages/test-js/">تست JS</a></li>
-        </ul>
-    </div>
-</main>
+
+    <main>
+        <div class="container">
+            <table id="my-table">
+                <thead>
+                    <tr>
+                        <th>نام</th>
+                        <th>سن</th>
+                        <th>شهر</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>علی</td>
+                        <td>25</td>
+                        <td>تهران</td>
+                    </tr>
+                    <tr>
+                        <td>مینا</td>
+                        <td>30</td>
+                        <td>شیراز</td>
+                    </tr>
+                    <tr>
+                        <td>رضا</td>
+                        <td>22</td>
+                        <td>اصفهان</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<br>
+        <div class="container">
+            <ul id="my-list">
+                <li class="list-items">صد سال تنهایی (گابریل گارسیا مارکز)</li>
+                <li class="list-items">1984 (جورج اورول)</li>
+                <li class="list-items" id="viliam">هملت (ویلیام شکسپیر)</li>
+                <li class="list-items">دنیای مواجک (هرمان همینگوی)</li>
+            </ul>
+        </div>
 
 
+    </main>
 
 
 </body>
+<script src="script.js"></script>
 <script src="/assets/js/light-dark-mode.js"></script>
 
 </html>
